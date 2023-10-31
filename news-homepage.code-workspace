@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../news-homepage-main"
+		},
+		{
+			"path": "../../YelpCamp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "news-homepage"
+	}
+}

@@ -1,0 +1,114 @@
+@use "__breakpoints" as *;
+
+body {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--color-dark-space-blue);
+    margin-top: 1.75rem;
+    padding: 0 1rem;
+
+    &__logo {
+        width: 45px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        
+        @include breakpoint('md') {
+            width: 65px;
+            height: 40px;
+        }
+    }
+
+    &__branding {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        position: relative;
+        
+        @include breakpoint('md') {
+            height: auto;
+            width: auto;
+        }
+        
+        .active {
+            display: flex;
+        }
+    
+        &__list {
+            list-style-type: none;
+            flex-direction: column;
+            
+            @include breakpoint('md') {
+                display: flex;
+                position: relative;
+                height: auto;
+                width: auto;
+                flex-direction: row;
+            }
+        }
+
+        &__link {
+            font-size: 1.125rem;
+            padding: .75rem 0;
+    
+            @include breakpoint('md') {
+                margin: 0;
+                padding: .75rem 1.28125rem;
+            }
+        }
+    
+        &__toggle {
+            &--close {
+                width: 31px;
+                height: 31px;
+                align-self: flex-end;
+                display: none;
+               
+            }
+            &--open {
+                width: 41px;
+                height: 17px;
+                display: flex;
+    
+                @include breakpoint('md') {
+                    display: none;
+                }
+            }
+        }
+    
+        &__modal-content {
+            background-color: white;
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1.75rem;
+            align-items: flex-start;
+            flex-direction: column;
+            display: none;
+    
+            @include breakpoint('md') {
+                position: relative;
+                display: flex;
+                padding: 0;
+                width: auto;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
