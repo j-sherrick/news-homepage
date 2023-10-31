@@ -60,6 +60,12 @@ body {
 .header .nav {
   position: relative;
 }
+.header .nav-container {
+  min-width: 343px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 @media (min-width: 45rem) {
   .header .nav {
     height: auto;
@@ -130,6 +136,17 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+
+.view {
+  padding: 0;
+  max-width: 343px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.top__picture {
+  width: 343px;
+  height: auto;
 }
 
 /*

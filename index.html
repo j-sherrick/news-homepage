@@ -10,42 +10,45 @@
 <body class="" id="">
     <header class="header">
 
-        <div class="header__branding">
-            <a href="#" class="header__link">
-                <svg class="header__logo">
-                    <use href="/assets/icons/logo.svg#logo"></use>
-                </svg>
-            </a>
-        </div>
-
-        <nav class="nav" id="modalNav">
-            <svg class="nav__toggle--open">
-                <use href="assets/icons/icon-menu.svg#menu"></use>
-            </svg>
-
-            <div class="nav__modal-content">
-                <svg class="nav__toggle--close">
-                    <use href="assets/icons/icon-menu-close.svg#menu"></use>
-                </svg>
-
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">New</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Popular</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Trending</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Categories</a>
-                    </li>
-                </ul>
+        <div class="nav-container">
+            <div class="header__branding">
+                <a href="#" class="header__link">
+                    <svg class="header__logo">
+                        <use href="/assets/icons/logo.svg#logo"></use>
+                    </svg>
+                </a>
             </div>
+    
+            <nav class="nav" id="modalNav">
+                <svg class="nav__toggle--open">
+                    <use href="assets/icons/icon-menu.svg#menu"></use>
+                </svg>
+    
+                <div class="nav__modal-content">
+                    <svg class="nav__toggle--close">
+                        <use href="assets/icons/icon-menu-close.svg#menu"></use>
+                    </svg>
+    
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">New</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Trending</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                
+        </div>
             <!---- /////////// END MODAL /////////////////// ---->
         </nav>
     </header>
@@ -53,7 +56,7 @@
 
         <section class="top">
             <article class="top__article">
-                <img 
+                <img class="top__picture"
                     alt=""
                     srcset="
                         assets/images/image-web-3-mobile.jpg,
@@ -61,7 +64,6 @@
                     "
                     sizes="
                         (min-width: 720px),
-                        0
                     "
                 >
                 <h1>The Bright Future of Web 3.0?</h1>

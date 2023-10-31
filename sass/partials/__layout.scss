@@ -34,6 +34,13 @@ body {
 
     .nav {
         position: relative;
+
+        &-container {
+            min-width: 343px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
         
         @include breakpoint('md') {
             height: auto;
@@ -111,7 +118,13 @@ body {
     }
 }
 
-.news {
+.view {
+    padding: 0;
+    max-width: 343px;
+    margin: 1.5rem auto 0 auto; 
+}
 
-    
+.top__picture {
+    width: 343px;
+    height: auto;
 }
