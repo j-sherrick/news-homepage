@@ -1,5 +1,6 @@
 @use "partials/__base";
-@use "partials/__breakpoints";
-@use "partials/__layout";
-@use "partials/__components";
-
+@use "layout/__breakpoints";
+@use "layout/__layout";
+@use "components/__header";
+@use "components/__modal";
+@use "components/__navbar";

@@ -1,0 +1,28 @@
+@use "../layout/__breakpoints" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--color-dark-space-blue);
+    margin-top: 1.75rem;
+    padding: 0 1rem;
+
+    &__logo {
+        width: 45px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        
+        @include breakpoint('md') {
+            width: 65px;
+            height: 40px;
+        }
+    }
+
+    &__branding {
+        display: flex;
+        align-items: center;
+    }
+}
