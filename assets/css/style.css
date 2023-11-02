@@ -29,7 +29,13 @@ body {
 body {
   font-family: Inter, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  height: 100vh;
+}
+
+.page-container {
+  max-width: 68.75rem;
+  margin: 1.75rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3);
 }
 
 .header {
@@ -38,8 +44,6 @@ body {
   align-items: center;
   width: 100%;
   color: var(--color-dark-space-blue);
-  margin-top: 1.75rem;
-  padding: 0 1rem;
 }
 .header__logo {
   width: 45px;
@@ -143,7 +147,7 @@ body {
     display: none;
   }
 }
-.nav__modal-content {
+.nav__content {
   background-color: white;
   width: 70%;
   height: 100%;
@@ -156,7 +160,7 @@ body {
   display: none;
 }
 @media (min-width: 45rem) {
-  .nav__modal-content {
+  .nav__content {
     position: relative;
     display: flex;
     padding: 0;

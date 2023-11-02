@@ -3,7 +3,13 @@
 body {
     font-family: Inter, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    height: 100vh;
+}
+
+.page-container {
+    max-width: 68.75rem;
+    margin: 1.75rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3);
 }
 
 .news {

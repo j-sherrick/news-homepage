@@ -8,9 +8,9 @@
     <title>News Homepage</title>
 </head>
 <body class="" id="">
-    <header class="header">
-
-        <div class="nav-container">
+    
+    <div class="page-container">
+        <header class="header">
             <div class="header__branding">
                 <a href="#" class="header__link">
                     <svg class="header__logo">
@@ -19,12 +19,12 @@
                 </a>
             </div>
     
-            <nav class="nav" id="modalNav">
+            <nav class="nav" id="nav-modal">
                 <svg class="nav__toggle--open">
                     <use href="assets/icons/icon-menu.svg#menu"></use>
                 </svg>
-    
-                <div class="nav__modal-content">
+                
+                <div class="nav__content">
                     <svg class="nav__toggle--close">
                         <use href="assets/icons/icon-menu-close.svg#menu"></use>
                     </svg>
@@ -47,30 +47,27 @@
                         </li>
                     </ul>
                 </div>
-                
-        </div>
-            <!---- /////////// END MODAL /////////////////// ---->
-        </nav>
+            </nav>
     </header>
-    <main class="view">
 
-        <section class="top">
-            <article class="top__article">
-                <img class="top__picture"
+    <main class="news">
+        <section class="featured">
+
+            <article class="featured__article">
+                <img class="featured__picture"
                     alt=""
                     srcset="
                         assets/images/image-web-3-mobile.jpg,
-                        assets/images/image-web-3-desktop.jpg
-                    "
+                        assets/images/image-web-3-desktop.jpg"
                     sizes="
-                        (min-width: 720px),
-                    "
+                        (max-width: 720px)"
                 >
                 <h1>The Bright Future of Web 3.0?</h1>
                 <p>
                     We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
                     But is it really fulfilling its promise?
                 </p>
+
                 <button class="primary" id="readMore">
                     Read More
                 </button>
@@ -94,19 +91,23 @@
                 </article>
             </article>
         </section>
-        <section class="featured">
-            <article class="featured-articles">
-                <article class="featured">
+
+        <section class="trending">
+            <article class="trending__articles">
+                <article class="trending__article">
+                    <img src="assets/images/image-retro-pcs.jpg" alt="retro computer on a desk" class="featured__picture">
                     <h3>01</h3>
                     <h4>Reviving Retro PCs</h4>
                     <p>What happens when old PCs are given modern upgrades?</p>
                 </article>
-                <article class="featured">
+                <article class="trending__article">
+                    <img src="assets/images/image-top-laptops.jpg" alt="stylish closeup of laptop keyboard" class="featured__picture">
                     <h3>02</h3>
                     <h4>Top 10 Laptops of 2022</h4>
                     <p>Our best picks for various needs and budgets.</p>
                 </article>
-                <article class="featured">
+                <article class="trending__article">
+                    <img src="assets/images/image-gaming-growth.jpg" alt="" class="featured__picture">
                     <h3>03</h3>
                     <h4>The Growth of Gaming</h4>
                     <p>How the pandemic has sparked fresh opportunities.</p>
@@ -116,6 +117,8 @@
             </article>
         </section>
     </main>
+    </div>
+    
     
 </body>
 </html>
