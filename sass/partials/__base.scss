@@ -26,3 +26,8 @@ a {
 body {
     box-sizing: inherit;
 }
+
+img,
+picture {
+    max-width: 100%;
+}

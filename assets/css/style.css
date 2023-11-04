@@ -26,16 +26,26 @@ body {
   box-sizing: inherit;
 }
 
+img,
+picture {
+  max-width: 100%;
+}
+
 body {
   font-family: Inter, Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
 .page-container {
-  max-width: 68.75rem;
+  max-width: 23.4375rem;
   margin: 1.75rem auto 0 auto;
   display: grid;
-  grid-template-columns: repeat(3);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 45rem) {
+  .page-container {
+    max-width: 68.75rem;
+  }
 }
 
 .header {
