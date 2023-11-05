@@ -12,6 +12,7 @@
         height: 28px;
         display: flex;
         align-items: center;
+        // fill: var(--color-dark-space-blue);
         
         @include breakpoint('md') {
             width: 65px;

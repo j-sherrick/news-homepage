@@ -48,6 +48,57 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-dark-space-blue);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+@media (min-width: 45rem) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+@media (min-width: 45rem) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 45rem) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 45rem) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
