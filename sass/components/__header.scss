@@ -6,13 +6,11 @@
     align-items: center;
     width: 100%;
     color: var(--color-dark-space-blue);
+    margin-bottom: 2rem;
 
     &__logo {
         width: 45px;
         height: 28px;
-        display: flex;
-        align-items: center;
-        // fill: var(--color-dark-space-blue);
         
         @include breakpoint('md') {
             width: 65px;
@@ -21,7 +19,5 @@
     }
 
     &__branding {
-        display: flex;
-        align-items: center;
     }
 }

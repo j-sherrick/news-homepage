@@ -1,81 +1,30 @@
 @use "__breakpoints" as *;
 
-@mixin heading-xl {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-}
-
-@mixin heading-lg {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-}
-
-@mixin heading-md {
-    font-size: 2rem;
-    line-height: 2rem;
-}
-
-@mixin heading-sm {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-}
-
-@mixin heading-xs {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-}
-
 body {
     font-family: Inter, Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
 .page-container {
-    max-width: 23.4375rem;
+    min-width: 23.4375rem;
+    padding-inline: 1rem;
     margin: 1.75rem auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
 
     @include breakpoint('md') {
         max-width: 68.75rem;
+        padding: 0;
+        min-width: none;
     }
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: var(--color-dark-space-blue);
-}
-
-h1 {
-    @include heading-lg;
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5rem;
+    gap: 4rem;
 
     @include breakpoint('md') {
-        @include heading-xl;
-    }
-}
-
-h2 {
-    @include heading-md;
-
-    @include breakpoint('md') {
-        @include heading-lg;
-    }
-}
-
-h3 {
-    @include heading-sm;
-
-    @include breakpoint('md') {
-        @include heading-md;
-    }
-}
-
-h4 {
-    @include heading-xs;
-
-    @include breakpoint('md') {
-        @include heading-sm;
+        grid-template-columns: 2fr 1fr;
+        gap: 0;
     }
 }

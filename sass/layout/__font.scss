@@ -1,0 +1,55 @@
+/// FONT STYLES
+
+@use "__breakpoints" as *;
+
+@mixin heading-xl {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
+@mixin heading-lg {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+@mixin heading-md {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+@mixin heading-sm {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+@mixin heading-xs {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-dark-space-blue);
+}
+
+h1 {
+    @include heading-xl;
+}
+
+h2 {
+    @include heading-lg;
+}
+
+h3 {
+    @include heading-md;
+}
+
+h4 {
+    @include heading-sm;
+}
+
+h5 {
+    @include heading-xs;
+}

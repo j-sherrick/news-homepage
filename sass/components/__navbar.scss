@@ -1,8 +1,7 @@
 @use "../layout/__breakpoints" as *;
 
 .nav {
-
-    position: relative;
+    // position: relative;
     
     @include breakpoint('md') {
         height: auto;
@@ -15,7 +14,6 @@
 
     &__list {
         list-style-type: none;
-        flex-direction: column;
         
         @include breakpoint('md') {
             display: flex;
@@ -41,13 +39,17 @@
             width: 31px;
             height: 31px;
             align-self: flex-end;
-            display: none;
+            // display: none;
+            &:hover {
+                cursor: pointer;
+            }
            
         }
         &--open {
             width: 41px;
             height: 17px;
             display: flex;
+            
 
             @include breakpoint('md') {
                 display: none;
@@ -57,15 +59,15 @@
 
     &__content {
         background-color: white;
-        width: 70%;
+        position:absolute;
         height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
+        width: 70%;
         padding: 1.75rem;
-        align-items: flex-start;
+        right: 0;
+        top: 0;
+        display: flex;
         flex-direction: column;
-        display: none;
+        gap: 5.375rem;
 
         @include breakpoint('md') {
             position: relative;
