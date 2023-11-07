@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon-32x32.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/scripts/modalNavController.js"></script>
     <title>News Homepage</title>
 </head>
 <body class="" id="">
@@ -19,34 +20,37 @@
                 </a>
             </div>
     
-            <nav class="nav" id="nav-modal">
-                <svg class="nav__toggle--open">
+            <nav class="nav">
+                <svg class="nav__toggle--open __toggle" id="openButton">
                     <use href="assets/icons/icon-menu.svg#menu"></use>
                 </svg>
                 
-                <div class="nav__content">
-                    <svg class="nav__toggle--close">
-                        <use href="assets/icons/icon-menu-close.svg#menu"></use>
-                    </svg>
-    
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">New</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Popular</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Trending</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Categories</a>
-                        </li>
-                    </ul>
+                <div class="modal" id="navModal">
+                    <div class="nav__content">
+                        <svg class="nav__toggle--close" id="closeButton">
+                            <use href="assets/icons/icon-menu-close.svg#menu"></use>
+                        </svg>
+                        
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">New</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Popular</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Trending</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Categories</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </nav>
         </header>
 

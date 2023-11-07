@@ -118,7 +118,7 @@ h5 {
     Modal menu
 */
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 10000;
   left: 0;
@@ -129,22 +129,19 @@ h5 {
   background-color: rgba(0, 0, 0, 0.4);
   animation: 0.4s fadeIn;
 }
+@media (min-width: 45rem) {
+  .modal {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+  }
+}
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
-@keyframes slideInFromRight {
-  from {
-    left: -400px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
     opacity: 1;
   }
 }
@@ -159,10 +156,12 @@ h5 {
 }
 .nav__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 @media (min-width: 45rem) {
   .nav__list {
-    display: flex;
     position: relative;
     height: auto;
     width: auto;
@@ -179,18 +178,25 @@ h5 {
     padding: 0.75rem 1.28125rem;
   }
 }
+.nav__toggle {
+  display: flex;
+}
 .nav__toggle--close {
   width: 31px;
   height: 31px;
   align-self: flex-end;
-}
-.nav__toggle--close:hover {
+  display: none;
   cursor: pointer;
+}
+@media (min-width: 45rem) {
+  .nav__toggle--close {
+    display: none;
+  }
 }
 .nav__toggle--open {
   width: 41px;
   height: 17px;
-  display: flex;
+  cursor: pointer;
 }
 @media (min-width: 45rem) {
   .nav__toggle--open {
@@ -205,12 +211,14 @@ h5 {
   padding: 1.75rem;
   right: 0;
   top: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5.375rem;
+  animation: 0.4s slideInFromRight;
 }
 @media (min-width: 45rem) {
   .nav__content {
+    background-color: transparent;
     position: relative;
     display: flex;
     padding: 0;
@@ -221,6 +229,16 @@ h5 {
   }
 }
 
+@keyframes slideInFromRight {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
 .featured__article {
   display: grid;
   grid-template-columns: 1fr;

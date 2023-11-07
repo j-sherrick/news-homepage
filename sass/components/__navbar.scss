@@ -14,9 +14,11 @@
 
     &__list {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
         
         @include breakpoint('md') {
-            display: flex;
             position: relative;
             height: auto;
             width: auto;
@@ -35,21 +37,28 @@
     }
 
     &__toggle {
+
+        display: flex;
+
         &--close {
             width: 31px;
             height: 31px;
             align-self: flex-end;
-            // display: none;
+            display: none;
+            cursor: pointer;
+
             &:hover {
-                cursor: pointer;
+            }
+
+            @include breakpoint('md') {
+                display: none;
             }
            
         }
         &--open {
             width: 41px;
             height: 17px;
-            display: flex;
-            
+            cursor: pointer;
 
             @include breakpoint('md') {
                 display: none;
@@ -65,11 +74,13 @@
         padding: 1.75rem;
         right: 0;
         top: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 5.375rem;
+        animation: .4s slideInFromRight;
 
         @include breakpoint('md') {
+            background-color: transparent;
             position: relative;
             display: flex;
             padding: 0;
@@ -79,4 +90,9 @@
             justify-content: center;
         }
     }
+}
+
+@keyframes slideInFromRight {
+    from {right: -100%; opacity: 0}
+    to {right: 0; opacity: 1}
 }

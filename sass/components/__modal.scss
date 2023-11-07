@@ -2,8 +2,10 @@
     Modal menu
 */
 
+@use "../layout/__breakpoints" as *;
+
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 10000;
     left: 0;
@@ -13,14 +15,15 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, .4);
     animation: 0.4s fadeIn;
+
+    @include breakpoint('md') {
+        display: flex;
+        background-color: transparent;
+        position: relative;
+    }
 }
 
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
-}
-
-@keyframes slideInFromRight {
-    from {left: -400px; opacity: 0}
-    to {left: 0; opacity: 1}
 }
