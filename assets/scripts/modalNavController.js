@@ -13,4 +13,9 @@ window.addEventListener('load', e => {
         modal.classList.toggle('__toggle');
         closeButton.classList.toggle('__toggle');
     })
+
+    window.addEventListener('resize', e => {
+        if(closeButton.classList.contains('__toggle'))
+            closeButton.classList.toggle('__toggle');
+    })
 })
