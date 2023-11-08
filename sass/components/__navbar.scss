@@ -8,7 +8,7 @@
         width: auto;
     }
     
-    .active {
+    .__toggle {
         display: flex;
     }
 
@@ -37,8 +37,6 @@
     }
 
     &__toggle {
-
-        display: flex;
 
         &--close {
             width: 31px;

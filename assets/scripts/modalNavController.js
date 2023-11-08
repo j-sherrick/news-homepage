@@ -8,4 +8,9 @@ window.addEventListener('load', e => {
         modal.classList.toggle('__toggle');
         closeButton.classList.toggle('__toggle');
     })
+
+    closeButton.addEventListener('click', e => {
+        modal.classList.toggle('__toggle');
+        closeButton.classList.toggle('__toggle');
+    })
 })
